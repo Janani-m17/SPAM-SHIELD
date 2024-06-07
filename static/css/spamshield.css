@@ -222,21 +222,81 @@ html{
     color: #000000;
 }
 
-.spamshield .trynowBtn {
-    border: 1px solid #000000; 
-    box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    overflow-wrap: break-word;
-    background: #8882F9;
-    font-family: 'Poppins';
-    font-weight: 700;
-    position: relative;
-    font-size: 22px;
-    width: 144px;
-    height: 40px;
-    box-sizing: border-box;
-    transition: color 0.3s ease;
-    animation: bounceIn 1s ease-in-out;
+
+
+
+/* CSS */
+ /* .trynowBtn {
+  align-items: center;
+   background-image: linear-gradient(144deg,#7f00ff, #e100ff 50%,#dabddc); 
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}  */
+/* CSS */
+.trynowBtn{
+  align-items: center;
+  background-image: linear-gradient(144deg,#6C63FF, #797df4 50%,#6949dd);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 0.7em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.trynowBtn:active,
+.trynowBtn:hover {
+  outline: 0;
+}
+
+.trynowBtn span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.trynowBtn:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .trynowBtn {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
 
 .icon-right {
@@ -259,6 +319,46 @@ html{
     color: #000000;
     animation: fadeIn 1s ease-in-out;
 }
+
+  
+
+  /* The typing text */
+  .typing-text {
+     display: inline-block; 
+    animation: typing 5s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+    white-space: nowrap; 
+    overflow: hidden; 
+    font-size: 30px;
+    font-weight: bold;
+    color: #6C63FF;
+    
+  }
+
+  /* Typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 150%;
+    }
+  }
+
+  /* Blinking cursor */
+  @keyframes blink {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+
+  /* Blinking cursor styling */
+  .typing-text::after {
+    /* position: absolute; */
+    right: 0;
+    color: #6C63FF;
+    font-weight: bold;
+    animation: blink 2s step-start infinite;
+  }
 
 .protect-yourself-from-phishing-attacks-sub3 {
     font-family: 'Poppins';
@@ -519,6 +619,10 @@ html{
     color: #ffffff;
     background-color: #8882F9;
   }
+
+  .emailbtn:hover{
+    background-color:#6963e4;
+  }
   
   .spamshield .websitebtn {
     border-radius: 50px;
@@ -528,6 +632,10 @@ html{
     color: #ffffff;
     background-color: #8882F9;
     margin-right: 50px;
+  }
+
+  .websitebtn:hover{
+    background-color:#6963e4;
   }
 .spamshield .tools {
     background: #DBD4D4;
@@ -636,6 +744,10 @@ textarea {
     background-color: #8882F9;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.checkBtn:hover,.check1Btn:hover{
+    background-color:#6963e4 ;
 }
 
 .result-label {

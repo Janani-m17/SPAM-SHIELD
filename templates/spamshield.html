@@ -40,7 +40,7 @@
     </div>
 
       <div class="group-1">
-        <button class="trynowBtn" onclick="scrollToSection('tools-section')">Try Now</button>
+        <button class="trynowBtn" onclick="scrollToSection('tools-section')"><span class="text">Try Now</span></button>
       </div>
     </div>
     <div class="introduction">
@@ -49,7 +49,7 @@
         <p class="protect-yourself-from-phishing-attacks">
           <span class="protect-yourself-from-phishing-attacks-sub-3">
             <span>
-              Protect Yourself from <span style="color: #6C63FF">Phishing Attacks</span>
+              <span>Protect Yourself from <span style="color: #6C63FF;margin-top: 3px;"><span class="typing-text">Phishing Attacks</span></span>
             </span>
           </span>
         </p>
@@ -255,8 +255,12 @@
   
 </div>
 </div>
-  <script>
 
+
+<!-- Script tag -->
+  <script>
+  const typingText = document.querySelector('.typing-text');
+  typingText.style.color = '#6C63FF';
 function toggleMenu() {
     var navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
