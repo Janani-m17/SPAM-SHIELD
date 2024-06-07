@@ -26,6 +26,7 @@ document.getElementById('checkSms').addEventListener('click', () => {
     }
 });
 
+
 document.getElementById('checkUrl').addEventListener('click', () => {
     const urlInput = document.getElementById('urlInput').value;
     if (urlInput) {
