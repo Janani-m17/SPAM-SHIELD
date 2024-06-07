@@ -1,0 +1,83 @@
+body {
+    width: 320px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    /* Adjusted margin to move the input area slightly upwards */
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#quote {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin-top: 5px;
+    /* Adjusted margin to increase space above the slogan */
+    font-size: 14px;
+    /* Increased font size of the slogan */
+}
+
+#shield-text {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    /* Added font weight for bold text */
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8882F9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #634ec6;
+}
+
+#shield-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#shield-icon {
+    margin-right: 10px;
+}
+
+
+.check-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.check-icon {
+    margin-bottom: 10px;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    /* Increased font size for output text */
+}

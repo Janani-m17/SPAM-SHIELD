@@ -1,0 +1,170 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: black;
+    }
+    to {
+        color: rgb(118, 118, 237);
+    }
+}
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .spamshield .container-10,
+.spamshield .how-it-works-1,
+.spamshield .container,
+.spamshield .vector-88,
+.spamshield .enter-the-email-sms-content-or-website-url-you-want-to-check,
+.spamshield .group-3,
+.spamshield .vector-89,
+.spamshield .our-advanced-algorithms-and-extensive-database-scan-for-known-phishing-indicators,
+.spamshield .group-4,
+.spamshield .vector-90,
+.spamshield .instantly-receive-adetailed-report-with-the-threat-level-and-recommended-actions,
+.spamshield .undraw-arrived-re-t-2-bw-1,
+.spamshield .check-it-out-1,
+.spamshield .check-it-out,
+.spamshield .vector-87,
+.spamshield .decider-buttons,
+.spamshield .container-7,
+.spamshield .emailbtn,
+.spamshield .websitebtn,
+.spamshield .tools,
+.spamshield .email-sms-spam-detection,
+.spamshield .undraw-personal-text-re-vqj-31,
+.spamshield .container-5,
+.spamshield .container-2,
+.spamshield .email-sms-spam-detection-1,
+.spamshield .main-box,
+.spamshield .enter-your-email-sms,
+.spamshield .rectangle-7,
+textarea,
+.spamshield .main-box-1 textarea,
+.checkBtn,
+.check1Btn,
+.result-label,
+.spamshield .rectangle-139,
+.spamshield .undraw-letter-re-8-m-031,
+
+  
+.spamshield .website-spam-detection,
+.spamshield .website-spam-detection-2,
+.spamshield .undraw-online-ad-re-ol-621,
+.spamshield .main-box-1,
+.spamshield .enter-website-url,
+.spamshield .rectangle-71,
+.spamshield .group-12,
+.spamshield .check-1,
+.spamshield .blog,
+.spamshield .stay-inform,
+.spamshield .stay-informed,
+.stay-informed,
+.spamshield .check-out-our-blog-for-the-latest-newstips-and-guides-on-phishing-prevention-and-cybersecurity-best-practices,
+.spamshield .group-47,
+.spamshield .container-9,
+.spamshield .top-10-phishing-scams-to-watch-out-for-in-2024,
+.spamshield .how-to-recognize-and-avoid-phishing-emails,
+.spamshield .the-rise-of-sms-phishing-what-you-need-to-know,
+.spamshield .container-3,
+.spamshield .footer,
+.spamshield .contact,
+.spamshield .vector,
+.spamshield .email,
+.spamshield .vector-1,
+.spamshield .git-hub,
+.spamshield .github,
+.spamshield .vector-2,
+.spamshield .phone,
+.spamshield .phone-1,
+.spamshield .vector-3,
+.spamshield .linked-in,
+.spamshield .linkedin,
+.spamshield .cont {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spamshield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spamshield.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+</head>
+<body>
+  <div class="container">
+  <div class="spamshield" >
+  
+  <div class="home" id="home-section">
+    <div class="navigation-bar">
+      <div class="container-6">
+        <img src="/static/images/logo.jpg" height="40px" width="40px">
+        <span class="spam-shield">
+          SPAM SHIELD
+        </span>
+      </div>
+      <div class="navbar">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars fa-2x" style="color: #6C63FF;"></i>
+        </div>
+        <div class="container-4">
+        <div class="nav-links" id="navLinks">
+   
+      <a href="#home-section" class="home-1">Home</a>
+      <a href="#tools-section" class="tools-1">Tools</a>
+      <a href="#blog-section" class="blog-1">Blog</a>
+      <a href="#contact-section" class="contact-1">Contact</a>
+    </div>
+  </div>
+    </div>
+
+      <div class="group-1">
+        <button class="trynowBtn" onclick="scrollToSection('tools-section')">Try Now</button>
+      </div>
+    </div>
+    <div class="introduction">
+      <img class="undraw-inbox-cleanup-re-jcbh-1" src="{{ url_for('static', filename='vectors/undraw_inbox_cleanup_re_jcbh.svg') }}" />
+      <div class="container-1">
+        <p class="protect-yourself-from-phishing-attacks">
+          <span class="protect-yourself-from-phishing-attacks-sub-3">
+            <span>
+              Protect Yourself from <span style="color: #6C63FF">Phishing Attacks</span>
+            </span>
+          </span>
+        </p>
+        <span class="quickly-and-easily-check-emails-sms-and-websites-for-phishing-risks">
+          Quickly and easily check emails, SMS, and websites for phishing risks.
+        </span>
+      </div>
+    </div>
+    <div class="what-we-do">
+      <div class="container-8">
+        <div class="what-we-do-1">
+          What we do?
+        </div>
+        <span
+          class="in-todays-digital-world-phishing-attacks-are-becoming-increasingly-sophisticated-and-prevalent-our-platform-helps-you-stay-safe-by-providing-aquick-and-reliable-way-to-check-emails-sms-messages-and-websites-for-phishing-threats-whether-youre-aconcerned-individual-or-abusiness-looking-to-protect-your-assets-weve-got-you-covered">
+          In today&#39;s digital world, phishing attacks are becoming<br />
+          increasingly sophisticated and prevalent. Our platform helps <br />
+          you stay safe by providing a quick and reliable way to check<br />
+          emails, SMS messages, and websites for phishing threats. <br />
+          Whether you&#39;re a concerned individual or a business looking<br />
+          to protect your assets, we&#39;ve got you covered.
+        </span>
+      </div>
+      <img class="undraw-email-capture-re-b-5-ys-1" src="{{ url_for('static', filename='vectors/undraw_email_capture_re_b5ys.svg') }}" />
+    </div>
+ </div>
+   <div class="tools" id="tools-section">
+    <div class="container-10">
+      <div class="how-it-works">
+        <p class="how-it-works-1">
+          <span class="how-it-works-1-sub-0"></span><span style="font-size: 35px;">Steps to be Followed</span>
+        </p>
+        <div class="container">
+          <img class="vector-88" src="{{ url_for('static', filename='vectors/vector_2_x2.svg') }}" />
+          <span class="enter-the-email-sms-content-or-website-url-you-want-to-check">
+            Enter the email, SMS content, or website URL you want to check.<br />
+  
+          </span>
+        </div>
+        <div class="group-3">
+            <img class="vector-89" src="{{ url_for('static', filename='vectors/vector_14_x2.svg') }}" />
+          <span class="our-advanced-algorithms-and-extensive-database-scan-for-known-phishing-indicators">
+            Our advanced algorithms and extensive database scan for known phishing indicators.
+          </span>
+        </div>
+        <div class="group-4">
+          <img class="vector-90"
+            src="{{ url_for('static', filename='vectors/vector_1_x2.svg') }}" />
+          <span class="instantly-receive-adetailed-report-with-the-threat-level-and-recommended-actions">
+            Receive immediate feedback on the safety of your data. Determine whether it is safe or spam by indicating the percentage of maliciousness.
+          </span>
+        </div>
+      </div>
+        <img class="undraw-arrived-re-t-2-bw-1" src="{{ url_for('static', filename='vectors/undraw_arrived_re_t2bw.svg') }}" />
+    </div>
+    <div class="check-it-out-1">
+      <span class="check-it-out">
+        Check It Out
+      </span>
+      <img class="vector-87"
+        src="{{ url_for('static', filename='vectors/vector_11_x2.svg') }}" />
+    </div>
+    <div class="decider-buttons">
+      <div class="container-7">
+        <button class="emailbtn" onclick="showEmailSMSBox()">Email / SMS spam detection</button>
+        <button class="websitebtn" onclick="showWebsiteBox()">Website spam detection</button>
+      </div>
+    </div>
+    <div class="email-sms-spam-detection" id="email-sms-section">
+      <img class="undraw-personal-text-re-vqj-31"
+        src="{{ url_for('static', filename='vectors/undraw_personal_text_re_vqj3.svg') }}" />
+      <div class="email-sms-spam-detection-1">
+        <label>Email/SMS Spam Detection</label>
+      </div>
+    <div class="container-5">
+      <div class="container-2">     
+        <div class="main-box">
+          <textarea id="emailSmsInput" placeholder="Enter your email or SMS text here..."></textarea>
+          <button class="checkBtn" onclick="predictSMS()">Check</button>
+          <div class="rectangle-139">
+            <label id="resultSMS" class="result-label"></label>
+          </div>
+        </div>
+    
+           </div>
+            <img class="undraw-letter-re-8-m-031" src="{{ url_for('static', filename='vectors/undraw_letter_re_8m03.svg') }}" />
+          </div>
+        </div>
+      
+    <div class="website-spam-detection" id="website-section">
+      <div class="website-spam-detection-2">
+      <label>Website Spam Detection</label>
+      </div>
+      <img class="undraw-online-ad-re-ol-621" src="{{ url_for('static', filename='vectors/undraw_online_ad_re_ol62.svg') }}" />
+      <div class="main-box-1">
+        <textarea id="webInput" placeholder="Enter the website URL here..."></textarea>
+        <button class="check1Btn" onclick="predictURL()">Check</button>
+        <div class="rectangle-1391">
+          <label id="resultURL" class="result-label"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Blog section -->
+    <div class="blog" id="blog-section">
+      <div class="stay-inform">
+        <p class="stay-informed">
+          <span class="stay-informed-sub-0"></span>
+          <span style="color: #6C63FF;">Stay Informed</span>
+        </p>
+        <span class="check-out-our-blog-for-the-latest-newstips-and-guides-on-phishing-prevention-and-cybersecurity-best-practices">
+          Check out our blog for the latest news, tips, and guides on phishing prevention <br />
+          and cybersecurity best practices.
+        </span>
+      </div>
+
+      <div class="group-47">
+        <div class="container-9">
+          <div class="rectangle-1">
+            <a href="https://www.stationx.net/phishing-statistics/" class="top-10-phishing-scams-to-watch-out-for-in-2024">
+              Top 10 Phishing Scams to Watch<br />
+             Out For in 2024
+            </a>
+            <div class="inner-rectangle-1">
+              <a href="https://www.stationx.net/phishing-statistics/">
+                <img src="/static/images/blog1.jpg" height="400px" width="400px">
+              </a>
+            </div>            
+          </div>
+         <div class="rectangle-2">
+          <a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" class="how-to-recognize-and-avoid-phishing-emails">
+            How to Recognize and Avoid<br />
+            Phishing Emails
+          </a>
+          <div class="inner-rectangle-2">
+            <a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams">
+              <img src="/static/images/blog3.jpg" height="400px" width="400px">
+            </a>
+          </div>
+         </div>
+         <div class="rectangle-3">
+          <a href="https://www.safetydetectives.com/blog/what-is-smishing-sms-phishing-facts/" class="the-rise-of-sms-phishing-what-you-need-to-know">
+            The Rise of SMS Phishing:<br />
+            What You Need to Know
+          </a>
+          <div class="inner-rectangle-3">
+            <a href="https://www.safetydetectives.com/blog/what-is-smishing-sms-phishing-facts/">
+              <img src="/static/images/blog2.jpg" height="400px" width="400px">
+            </a>
+          </div>
+         </div>
+          </div>
+      </div>
+    </div>
+    
+    
+   
+    <div class="footer" id="contact-section">
+      <div class="contact">
+        <p>Contact</p>
+      </div>
+
+      <form id="queryForm" onsubmit="submitQuery(event)">
+        <div class="qform">
+          <div class="labels">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="message">
+            <textarea id="message" name="message" placeholder="Your Message" required default></textarea>
+            <button type="submit">Submit</button>
+          </div>
+
+        </div>
+      </form>
+
+      <img class="contact-vector" src="{{ url_for('static', filename='vectors/undraw_contact_us_re_4qqt.svg') }}" />
+
+      <div class="social">
+        <div class="email">
+          <a href="mailto:skshrinaya@gmail.com">
+            <img class="vector" src="{{ url_for('static', filename='vectors/vector_5_x2.svg') }}" alt="Email" />
+          </a>
+        </div>
+        <div class="phone-1">
+          <a href="tel:+91 9942013373">
+            <img class="vector-2" src="{{ url_for('static', filename='vectors/vector_3_x2.svg') }}" alt="Phone" />
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/rithika-sundaram-096554258" target="_blank">
+            <img class="vector-3" src="{{ url_for('static', filename='vectors/vector_7_x2.svg') }}" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  
+  
+</div>
+</div>
+  <script>
+
+function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+
+document.querySelector('.fa-bars').addEventListener('click', function() {
+  document.querySelector('.container-4').classList.toggle('show');
+});
+
+
+
+    window.onload = function () {
+    document.getElementById('queryForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get form values
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      // Construct the mailto link
+      var mailtoLink = 'mailto:skshrinaya@gmail.com' +
+        '?subject=' + encodeURIComponent('Customer Query') +
+        '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+
+      // Open the default email client with the email pre-filled
+      window.location.href = mailtoLink;
+    });
+  };
+
+  function showEmailSMSBox() {
+          scrollToSection('email-sms-section');
+          document.querySelector('.main-box').style.display = 'block';
+          // document.querySelector('.main-box-1').style.display = 'none';
+        }
+
+        function showWebsiteBox() {
+          scrollToSection('website-section');
+          // document.querySelector('.main-box').style.display = 'none';
+          document.querySelector('.main-box-1').style.display = 'block';
+        }
+
+        function predictSMS() {
+      var inputSMS = document.getElementById('emailSmsInput').value;
+      fetch('/predict_sms', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ input_sms: inputSMS })
+      })
+          .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('resultSMS').innerText = data.result;
+        var resultLabel = document.getElementById('resultSMS');
+            resultLabel.innerText = data.result;
+            resultLabel.style.fontSize = data.result === 'Spam' ? '30px' : '30px';
+            console.log(data.result);  
+            if (data.result.trim().toLowerCase() === 'it is safe to proceed'.toLowerCase()) {
+    resultLabel.style.color = 'green';
+} else {
+    resultLabel.style.color = 'red';
+}
+   
+      })
+      .catch(error => {
+        document.getElementById('resultSMS').innerText = 'Error: ' + error;
+        resultLabel.style.fontSize = '30px';
+        console.error('There was a problem with the fetch operation:', error);
+      });
+  }
+
+    function predictURL() {
+      var inputURL = document.getElementById('webInput').value;
+      fetch('/predict_url', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ input_url: inputURL })
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          document.getElementById('resultURL').innerText = data.result;
+             var resultLabel = document.getElementById('resultURL');
+             resultLabel.innerText = data.result;
+             resultLabel.style.fontSize = data.result === 'Spam' ? '25px' : '25px'; 
+            // resultLabel.style.color = data.result.toLowerCase() === 'It is safe to proceed' ? 'red' : 'green';
+        
+
+if (data.result.trim().toLowerCase() === 'it is safe to proceed'.toLowerCase()) {
+    resultLabel.style.color = 'green';
+} else {
+    resultLabel.style.color = 'red';
+}
+
+   
+        })
+        .catch(error => {
+          document.getElementById('resultURL').innerText = 'Error: ' + error;
+          resultLabel.style.fontSize ='30px'; 
+          console.error('There was a problem with the fetch operation:', error);
+        });
+    }
+     //for Try Now button
+   function scrollToSection(id) {
+      const targetElement = document.getElementById(id);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+   
+    // Smooth scrolling for navbar links
+      document.querySelectorAll('.container-4 a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+  const navbarLinks = document.querySelectorAll('.container-4 a');
+ 
+ 
+      
+  
+    // Event listener for the email/SMS spam check button
+    document.querySelector('.checkBtn').addEventListener('click', predictSMS);
+
+    // Event listener for the website spam check button
+    document.querySelector('.check1Btn').addEventListener('click', predictURL);
+    
+  </script>
+</body>
+</html>

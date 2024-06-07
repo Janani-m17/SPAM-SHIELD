@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpamShield</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="shield-container">
+        <div id="shield-icon">
+            <img src="./images/shield-icon.svg" alt="Shield Icon" width="30px" height="30px" margin="5px 0 10px 0">
+        </div>
+        <div id="shield-text">SPAM SHIELD</div>
+    </div>
+    <div id="quote">Stay Secure: Verify SMS/EMails and URLs</div>
+
+    <div class="check-section">
+        <div class="check-icon">
+            <img src="./images/sms-icon.svg" alt="SMS Icon" width="100px" height="100px">
+    
+        </div>
+        <textarea id="smsInput" placeholder="Enter SMS"></textarea>
+        <button id="checkSms">Check SMS</button>
+        <div id="smsResult" class="result"></div>
+    </div>
+
+    <div class="check-section">
+        <div class="check-icon">
+            <img src="./images/website-icon.svg" alt="URL Icon" width="100px" height="100px">
+        </div>
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button id="checkUrl">Check URL</button>
+        <div id="urlResult" class="result"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
