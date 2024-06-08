@@ -46,7 +46,7 @@ Spam Shield is a machine learning-based phishing detection system designed to id
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/spam-shield.git
+   git clone [https://github.com/your-repo/spam-shield.git](https://github.com/Janani-m17/SPAM-SHIELD.git)
    cd spam-shield
    ```
 
