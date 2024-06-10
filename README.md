@@ -82,7 +82,8 @@ Spam Shield is a machine learning-based phishing detection system designed to id
 
 ## Contributors
 
-@https://github.com/skshrinaya
+https://github.com/skshrinaya
+https://www.github.com/swetha5157
 
 ## Contact
 
