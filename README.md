@@ -90,6 +90,6 @@ https://www.github.com/swetha5157
 
 ## Contact
 
-For any inquiries, please contact [janani.mkgs@gmail.com].
+For any inquiries, please contact janani.mkgs@gmail.com.
 
 ---
