@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>spamshield</title>
+    <link rel="icon" type="image/jpg" href="/static/images/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -303,6 +304,15 @@ document.querySelector('.fa-bars').addEventListener('click', function() {
         }
 
         function predictSMS() {
+
+          var inputSMS = document.getElementById('emailSmsInput').value.trim(); // Trim whitespace from input
+            var resultLabel = document.getElementById('resultSMS');
+            if (!inputSMS) {
+                resultLabel.innerText = 'Please enter valid email or SMS text'; // Display error message
+                resultLabel.style.color = 'red'; // Change text color to indicate error
+                return; // Exit function if input is empty
+            }
+
       var inputSMS = document.getElementById('emailSmsInput').value;
       fetch('/predict_sms', {
         method: 'POST',
@@ -338,6 +348,16 @@ document.querySelector('.fa-bars').addEventListener('click', function() {
   }
 
     function predictURL() {
+
+      var inputURL = document.getElementById('webInput').value.trim(); // Trim whitespace from input
+    var resultLabel = document.getElementById('resultURL');
+    var urlRegex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i;
+    if (!inputURL.match(urlRegex)) {
+        resultLabel.innerText = 'Please enter a valid URL'; // Display error message
+        resultLabel.style.color = 'red'; // Change text color to indicate error
+        return; // Exit function if input is not a valid URL
+    }
+
       var inputURL = document.getElementById('webInput').value;
       fetch('/predict_url', {
         method: 'POST',
